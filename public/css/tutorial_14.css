@@ -1,0 +1,33 @@
+*{margin:0;padding:0;}
+header{color:white;background:red;font-size:40px;}
+footer{width:100%;color:white;background:black;font-size:80px;position:fixed;left:0;bottom:0;}
+section{margin-left: 10px;}
+
+.syntax{
+    color:blue;
+    font-size:18px;
+}
+
+.resize {
+  width: 300px; 
+  border: 2px solid;
+  padding: 20px; 
+  resize: none;
+  overflow: auto;
+ 
+}
+
+div.box1 {
+  width:300px;
+  margin: 20px;
+  border: 1px solid black;  
+  outline: 4px solid red;
+  outline-offset: 15px;
+} 
+
+div.box2 {
+  margin: 10px;
+  border: 1px solid black;
+  outline: 5px dashed blue;
+  outline-offset: 5px;
+} 

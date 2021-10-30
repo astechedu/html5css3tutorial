@@ -1,0 +1,38 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+header{width:100%;color:white;background:red;font-size:40px;}
+footer{width:100%;color:white;background:black;font-size:80px;position:fixed;left:0;bottom:0;}
+section{width:80%;margin:0 auto;}
+body{overflow:hidden;}
+
+.syntax{
+    color:blue;
+    font-size:18px;
+}
+
+.page {
+   display:flex;
+   flex-direction: row;
+
+}
+
+.box1,.box2,.box3,.box4 {
+	width:100px;
+	height:100px;
+	background: red;
+	align-items:baseline;
+
+
+}
+
+.box1 {
+	 
+	background: black;
+}
+.box2 {
+	justify-content:flex-start;
+	background: yellow;
+}
+.box3 {
+	
+	background: blue;
+}

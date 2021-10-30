@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="public/css/tutorial_17.css">
+	<script type="text/javascript" src="Any Js Link Here"></script>
+	<title>HTML5 & CSS3 Tutorial</title>
+	<style>
+		.notes {
+			width:180px;
+			height:20px;
+			color:white;
+			font-weight:bold;
+			position:absolute;
+			left:352px;
+			top:0;
+			background:blue;
+			overflow: hidden;
+		}
+		.notes:hover{
+			width:1000px;
+			height:300px;
+			font-size:13px;
+			color:yellow;
+			padding:6px;
+			display:block;
+			overflow:scroll;
+		}
+
+		.page{
+			width:500px;
+			height:400px;
+			background:green;
+			column-count: 3;
+			column-gap: 3px;
+            column-rule-style: solid;
+            column-rule-width: 1px;
+            column-rule-color: lightblue;
+            column-rule: 1px solid lightblue;
+            column-span: all;
+		}
+
+	</style>
+</head>
+<body style="overflow:hidden;">
+	<header>This is header...</header>
+
+	<section>
+
+	<h1>CSS Multiple Column Layout</h1>
+
+        <div class="syntax">	
+        	CSS Multi-column Properties:<br>
+        	In this chapter you will learn about the following multi-column properties:<br>
+			   <strong>column-count,&nbsp;column-gap,&nbsp;column-rule-style,&nbsp;column-rule-width,&nbsp;column-rule-color,&nbsp;column-rule,
+			   &nbsp;column-span,&nbsp;column-width</strong><br>
+			   Examples: &nbsp;
+		  column-count: 3;&nbsp;column-gap: 3px;&nbsp;
+          column-rule-style: solid;&nbsp;column-rule-width: 1px;&nbsp;column-rule-color: lightblue;
+          &nbsp;column-rule: 1px solid lightblue;&nbsp;column-span: all
+			   <hr>            	       	
+        </div>
+
+
+ 
+
+
+<br><br>
+<div class="multi-columns">
+		Where does it come from?
+
+	Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+	Where can I get some?
+
+	There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Notes -->        
+        <div class="notes" style="">
+        	
+		CSS Multi-column Layout:
+
+		The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers:
+
+
+		CSS Create Multiple Columns:
+		---------------------------
+
+		The column-count property specifies the number of columns an element should be divided into.
+
+		The following example will divide the text in the <div> element into 3 columns: 
+
+		Example:
+
+		div {
+		  column-count: 3;
+		}
+
+		CSS Specify the Gap Between Columns:
+		-----------------------------------
+
+		The column-gap property specifies the gap between the columns.
+
+		The following example specifies a 40 pixels gap between the columns:
+
+		Example:
+
+		div {
+		  column-gap: 40px;
+		}
+
+		CSS Column Rules:
+        ---------------
+		The column-rule-style property specifies the style of the rule between columns:
+
+		Example:
+
+		div {
+		  column-rule-style: solid;
+		}
+
+		The column-rule-width property specifies the width of the rule between columns:
+
+		Example:
+
+		div {
+		  column-rule-width: 1px;
+		}
+
+		The column-rule-color property specifies the color of the rule between columns:
+
+		Example:
+
+		div {
+		  column-rule-color: lightblue;
+		}
+
+		The column-rule property is a shorthand property for setting all the column-rule-* properties above.
+		The following example sets the width, style, and color of the rule between columns:
+
+		Example:
+
+		div {
+		  column-rule: 1px solid lightblue;
+		}
+
+		Specify How Many Columns an Element Should Span:
+		-----------------------------------------------
+
+		The column-span property specifies how many columns an element should span across.
+
+		The following example specifies that the <h2> element should span across all columns:
+        
+		Example:
+
+		h2 {
+		  column-span: all;
+		}
+
+		Specify The Column Width:
+		------------------------
+
+		The column-width property specifies a suggested, optimal width for the columns.
+
+		The following example specifies that the suggested, optimal width for the columns should be 100px:
+
+
+		Example:
+
+		div {
+		  column-width: 100px;
+		}
+
+
+		<br>CSS Multi-columns Properties:<br>
+		----------------------------<br>
+
+		The following table lists all the multi-columns properties: <br>
+		Property&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	Description<br>
+		column-count:&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies the number of columns an element should be divided into<br>
+		column-fill:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies how to fill columns<br>
+		column-gap:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies the gap between the columns<br>
+		column-rule:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	A shorthand property for setting all the column-rule-* properties<br>
+		column-rule-color:&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies the color of the rule between columns<br>
+		column-rule-style:&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies the style of the rule between columns<br>
+		column-rule-width:&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies the width of the rule between columns<br>
+		column-span:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies how many columns an element should span across<br>
+		column-width:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	Specifies a suggested, optimal width for the columns<br>
+		columns:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 	A shorthand property for setting column-width and column-count<br>
+		---------------------------------------------------------------------------------------
+       </div>
+
+	</section>
+
+
+
+
+
+
+    <!-- Smily -->
+	<div class="smily_one_wrapper">
+	   	<img class="smily_one" src="public/images/smily01.png">	
+	</div>
+
+       <img class="aeroplane" src="public/images/aeroplane03.png">	
+
+
+
+
+
+
+	<footer>This is footer...    
+	</footer>
+</body>
+</html>
+
+
+
+<style type="text/css">
+	   
+	.aeroplane{	
+		width:500px;
+		left:-130px;bottom:36px;		
+		animation: aeroplane 18s linear infinite;
+	}
+
+	@keyframes aeroplane {
+	   0%{left:-530px;bottom:300px;}
+	   50%{left:40px;bottom:300px;}	   
+	   75%{left:1390px;bottom:440px;width:50px;transform: rotate(-15deg);}
+	   100%{left:1390px;bottom:500px;width:50px;transform: rotate(-15deg);}
+	}
+
+</style>

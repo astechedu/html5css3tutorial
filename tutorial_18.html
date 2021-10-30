@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="public/css/tutorial_18.css">
+	<script type="text/javascript" src="Any Js Link Here"></script>
+	<title>HTML5 & CSS3 Tutorial</title>
+	
+</head>
+<body>
+	<header>This is header...
+      	<div class="mess_box">
+			<span class="mess">Media Query Introduction</span>
+		</div>
+	</header>
+
+	<section>
+
+	<h1>Responsive Web Design - Media Queries</h1>
+
+        <div class="syntax">	                     	       	
+       </div>
+
+
+
+
+
+
+
+
+<div class="page">
+	<div class="Box" id="box1">Box1</div>
+	<div class="Box" id="box2">Box2</div>
+	<div class="Box" id="box3">Box3</div>
+	<div class="Box" id="box4">Box4</div>
+	
+</div>
+
+
+<img src="public/images/aeroplane03.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="notes">
+
+     	What is a Media Query?<br>
+		Media query is a CSS technique introduced in CSS3.<br>
+		It uses the @media rule to include a block of CSS properties only if a certain condition is true.<br>
+
+		Example:<br>
+
+			If the browser window is 600px or smaller, the background color will be lightblue:<br>
+
+
+			@media only screen and (max-width: 600px) {<br>
+			  body {<br>
+			    background-color: lightblue;<br>
+			  }<br>
+			}<br>
+
+
+		Add a Breakpoint:<br>
+		-----------------<br>
+
+		Earlier in this tutorial we made a web page with rows and columns, and it was responsive, but it did<br> not look good on a small screen.<br>
+
+		Media queries can help with that. We can add a breakpoint where certain parts of the design will behave<br> differently on each side of the breakpoint.<br>
+
+
+		Example:<br>
+
+		When the screen (browser window) gets smaller than 768px, each column should have a width of 100%:<br>
+			/* For desktop: */<br>
+			.col-1 {width: 8.33%;}<br>
+			.col-2 {width: 16.66%;}<br>
+			.col-3 {width: 25%;}<br>
+			.col-4 {width: 33.33%;}<br>
+			.col-5 {width: 41.66%;}<br>
+			.col-6 {width: 50%;}<br>
+			.col-7 {width: 58.33%;}<br>
+			.col-8 {width: 66.66%;}<br>
+			.col-9 {width: 75%;}<br>
+			.col-10 {width: 83.33%;}<br>
+			.col-11 {width: 91.66%;}<br>
+			.col-12 {width: 100%;}<br>
+
+		@media only screen and (max-width: 768px) {<br>
+		  /* For mobile phones: */<br>
+
+		  [class*="col-"] {<br>
+		    width: 100%;<br>
+		  }<br>
+		}<br>
+
+
+
+		Always Design for Mobile First:<br>
+		-------------------------------<br>
+
+		Mobile First means designing for mobile before designing for desktop or any other device (This will<br> make the page display faster on smaller devices)<br>
+
+
+		Example:<br>
+		/* For mobile phones: */<br>
+		[class*="col-"] {<br>
+		  width: 100%;<br>
+		}<br>
+
+		@media only screen and (min-width: 768px) {<br>
+
+		  /* For desktop: */<br>
+		  .col-1 {width: 8.33%;}<br>
+		  .col-2 {width: 16.66%;}<br>
+		  .col-3 {width: 25%;}<br>
+		  .col-4 {width: 33.33%;}<br>
+		  .col-5 {width: 41.66%;}<br>
+		  .col-6 {width: 50%;}<br>
+		  .col-7 {width: 58.33%;}<br>
+		  .col-8 {width: 66.66%;}<br>
+		  .col-9 {width: 75%;}<br>
+		  .col-10 {width: 83.33%;}<br>
+		  .col-11 {width: 91.66%;}<br>
+		  .col-12 {width: 100%;}<br>
+		}<br>
+
+
+		Another Breakpoint:<br>
+		-------------------<br>
+		Example:<br>
+
+		Note that the two sets of classes are almost identical, the only difference is the name (col- and<br> col-s-):<br>
+		/* For mobile phones: */<br>
+		[class*="col-"] {<br>
+		  width: 100%;<br>
+		}<br>
+
+		@media only screen and (min-width: 600px) {<br>
+		  /* For tablets: */<br>
+		  .col-s-1 {width: 8.33%;}<br>
+		  .col-s-2 {width: 16.66%;}<br>
+		  .col-s-3 {width: 25%;}<br>
+		  .col-s-4 {width: 33.33%;}<br>
+		  .col-s-5 {width: 41.66%;}<br>
+		  .col-s-6 {width: 50%;}<br>
+		  .col-s-7 {width: 58.33%;}<br>
+		  .col-s-8 {width: 66.66%;}<br>
+		  .col-s-9 {width: 75%;}<br>
+		  .col-s-10 {width: 83.33%;}<br>
+		  .col-s-11 {width: 91.66%;}<br>
+		  .col-s-12 {width: 100%;}<br>
+		}<br>
+
+		@media only screen and (min-width: 768px) {<br>
+		  /* For desktop: */<br>
+		  .col-1 {width: 8.33%;}<br>
+		  .col-2 {width: 16.66%;}<br>
+		  .col-3 {width: 25%;}<br>
+		  .col-4 {width: 33.33%;}<br>
+		  .col-5 {width: 41.66%;}<br>
+		  .col-6 {width: 50%;}<br>
+		  .col-7 {width: 58.33%;}<br>
+		  .col-8 {width: 66.66%;}<br>
+		  .col-9 {width: 75%;}<br>
+		  .col-10 {width: 83.33%;}<br>
+		  .col-11 {width: 91.66%;}<br>
+		  .col-12 {width: 100%;}<br>
+		}<br>
+        ------------------------------------<br>
+
+
+		HTML Example:<br>
+
+		For desktop:<br>
+
+		The first and the third section will both span 3 columns each. The middle section will span 6 columns.<br>
+
+		For tablets:<br>
+
+		The first section will span 3 columns, the second will span 9, and the third section will be displayed <br>below the first two sections, and it will span 12 columns:<br>
+
+		<div class="row"><br>
+		  <div class="col-3 col-s-3">...</div><br>
+		  <div class="col-6 col-s-9">...</div><br>
+		  <div class="col-3 col-s-12">...</div><br>
+		</div><br> 
+
+
+		Typical Device Breakpoints:<br>
+		---------------------------<br>
+
+		There are tons of screens and devices with different heights and widths, so it is hard to create an<br> exact breakpoint for each device. To keep things simple you could target five groups:<br>
+
+		Example:<br><br>
+		
+		/* Extra small devices (phones, 600px and down) */<br>
+		@media only screen and (max-width: 600px) {...}<br>
+
+		/* Small devices (portrait tablets and large phones, 600px and up) */<br>
+		@media only screen and (min-width: 600px) {...}<br>
+
+		/* Medium devices (landscape tablets, 768px and up) */<br>
+		@media only screen and (min-width: 768px) {...}<br>
+
+		/* Large devices (laptops/desktops, 992px and up) */<br>
+		@media only screen and (min-width: 992px) {...}<br>
+
+		/* Extra large devices (large laptops and desktops, 1200px and up) */<br>
+		@media only screen and (min-width: 1200px) {...} <br>
+
+-----------------------------------------------------------------------------------<br>
+
+
+		Orientation: Portrait / Landscape<br>
+
+		Media queries can also be used to change layout of a page depending on the orientation of the browser.<br>
+
+		You can have a set of CSS properties that will only apply when the browser window is wider than its<br> height, a so called "Landscape" orientation:<br>
+
+		Example:<br>
+
+		The web page will have a lightblue background if the orientation is in landscape mode:<br>
+
+		@media only screen and (orientation: landscape) {<br>
+
+		  body {<br>
+		    background-color: lightblue;<br>
+		  }<br>
+		} <br>
+--------------------------------------------------------------------------------------------<br>
+
+
+		Hide Elements With Media Queries:<br>
+		---------------------------------<br>
+
+		Another common use of media queries, is to hide elements on different screen sizes:<br>
+		I will be hidden on small screens.<br>
+		Example<br>
+		/* If the screen size is 600px wide or less, hide the element */<br>
+
+		@media only screen and (max-width: 600px) {<br>
+		  div.example {<br>
+		    display: none;<br>
+		  }<br>
+		}<br>
+
+		-------------------------------------------------------<br>
+
+		Change Font Size With Media Queries<br>
+
+		You can also use media queries to change the font size of an element on different screen sizes:<br>
+		Variable Font Size.<br>
+		Example<br>
+		/* If the screen size is 601px or more, set the font-size of <div></div> to 80px */<br>
+
+		@media only screen and (min-width: 601px) {<br>
+		  div.example {<br>
+		    font-size: 80px;<br>
+		  }<br>
+		}<br>
+
+		/* If the screen size is 600px or less, set the font-size of <div></div> to 30px */<br>
+
+		@media only screen and (max-width: 600px) {<br>
+		  div.example {<br>
+		    font-size: 30px;<br>
+		  }<br>
+		}<br>
+
+		-----------------------------------------------<br>
+
+    
+
+    </div>
+
+
+
+
+
+    <!-- Aeroplane -->
+	<div class="aeroplane">
+	   	<img class="aeroplane" src="public/images/aeroplane03.png">	
+	</div>
+
+    <!-- Smily -->
+	<div class="smily_one_wrapper">
+	   	<img class="smily_one" src="public/images/smily01.png">	
+	</div>    
+
+	</section>
+
+
+	<!-- Bottom Text -->		
+	<div class="courses">
+		<span class="course">Web Development & Web Designing: HTML, HTML5, CSS, CSS3, Javascript, jquery, vue js, angular js, react js, express js, node js, typescript, core php, cakephp, codeigniter, laravel, zend, 
+		laminas, mysql, RDMS, mongoDB, sqlite, wordpress, python, django, flash, ruby, ruby on rails etc.</span>
+	</div>
+
+	<footer>This is footer...
+
+	    <!-- Animation Text -->
+		<div class="animationText">		   	  
+			<div class="animationstxt">HTML5 & CSS3 Tutorial</div>
+		</div>	
+	</footer>
+</body>
+</html>
+
+
+
+
+
+<style>
+	   .notes {
+		   	width:180px;
+		   	height:20px;
+		   	color:white;
+		   	font-weight:bold;
+		   	position:absolute;
+		   	left:352px;
+		   	top:0;
+		   	background:blue;
+		   	overflow: hidden;	   
+	   }
+	   
+		.notes:hover{
+		   	width:400px;
+		   	height:400px;
+		   	font-size:12px;
+		   	color:white;
+		   	padding:6px;
+		   	display:block;
+		   	overflow:scroll;
+		}
+
+
+ /*  Tutorial 05 */
+	.smily_one_wrapper{width:300px;height:100px;position:absolute;top:200px;left:120px;}
+ 	.smily_one{	
+	    width:50px;	  
+		background: transparent;
+		animation: smily01 5s linear infinite;  
+	}
+	@keyframes smily_one {	
+	   0%{width:0;transform:scale(0) rotate(0deg);}
+	   25%{width:50px;transform:scale(3) rotate(-10deg);}	
+	   50%{width:50px;transform:scale(3) rotate(0deg);}	   
+	   100%{width:90px;transform:scale(0) rotate(30deg);}
+	}
+
+
+.   .animationText {
+
+	}
+
+    .animationstxt{
+       margin-top:15px;
+    }
+
+    .mess_box{width:300px;height:30px;}
+    .mess{    	
+    	width:300px;
+    	color:white;
+    	font-size:15px;
+    }
+
+
+	.aeroplane{	
+		width:60%;
+		left:-130px;bottom:36px;		
+		animation: aeroplane 20s linear infinite;
+	}
+
+	@keyframes aeroplane {
+	   0%{left:-270px;bottom:0px;}
+	   50%{left:20px;bottom:100px;}	   
+	   75%{left:1390px;bottom:140px;width:20%;transform: rotate(-15deg);}
+	   100%{left:1390px;bottom:140px;width:20%;transform: rotate(-15deg);}
+	}
+
+
+	.courses{
+		width:100%;height:20px;					
+		background: red;	
+		position:absolute;left:0;bottom:92px;		      
+	}
+	.course{				
+	    color:yellow;
+		font-weight:bold;
+		font-size:15px;
+		position: none;
+		animation: course 20s linear infinite;	}
+
+	@keyframes course{
+	   0% {
+	   	    left:500px;
+	   	  }
+
+	   100% {
+
+	   	    left:-500px;
+	   	}	  	
+	}
+
+
+	</style>

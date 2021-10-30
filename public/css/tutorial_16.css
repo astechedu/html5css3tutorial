@@ -1,0 +1,71 @@
+*{margin:0;padding:0;}
+header{color:white;background:red;font-size:40px;}
+footer{width:100%;color:white;background:black;font-size:80px;position:fixed;left:0;bottom:0;}
+section{margin-left: 30px;}
+
+.syntax{
+    color:blue;
+    font-size:18px;
+}
+
+
+.box1{
+	width:100px;
+	height:100px;
+	padding:5px;
+	background:green;	
+	border-radius: 50px;
+    animation: mybox1 1s linear infinite;
+}
+
+.box2{
+	width:50px;
+	height:50px;
+	padding:5px;
+	background:red;
+    animation: mybox2 1s linear infinite;
+}
+
+.box3{
+	width:50px;
+	height:50px;
+	padding:5px;
+	margin-left:300px;
+	background:blue;
+    animation: mybox3 10s linear infinite;
+}
+.box4{
+	width:50px;
+	height:50px;
+	padding:5px;
+	margin-left:300px;
+	background:lightblue;
+ 
+    animation-name:mybox4;
+    animation-duration: 10s;
+    animation-direction: linear;
+    animation-iteration-count:infinite;
+
+}
+
+@keyframes mybox1{
+  0%{transform:rotate(0deg);} 
+  100%{transform:rotate(260deg);}
+}
+
+@keyframes mybox2{
+  0%{transform:rotate(0deg);} 
+  100%{transform:rotate(260deg);}
+}
+
+@keyframes mybox3{
+  0%{margin-left:0px; transform:rotate(0deg);} 
+  50%{margin-left:300px;transform:rotate(360deg);}
+  100%{margin-left:0px;}
+}
+
+@keyframes mybox4{
+  0%{margin-left:0px; transform:rotate(0deg); background:black;} 
+  50%{margin-left:300px;transform:rotate(360deg);background: red;}
+  100%{margin-left:0px;background: yellow;}
+}

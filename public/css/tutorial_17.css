@@ -1,0 +1,19 @@
+*{margin:0;padding:0;}
+header{color:white;background:red;font-size:40px;}
+footer{width:100%;color:white;background:black;font-size:80px;position:fixed;left:0;bottom:0;}
+section{margin-left: 30px;}
+
+.syntax{
+    color:blue;
+    font-size:18px;
+}
+
+
+
+.multi-columns {
+	column-count: 3;
+	column-gap: 5px;
+	column-rule:5px solid red;
+
+
+}

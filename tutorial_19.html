@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="site.css">
+	<link rel="stylesheet" type="text/css" href="public/css/tutorial_19.css">
+	<script type="text/javascript" src="Any Js Link Here"></script>
+	<title>HTML5 & CSS3 Tutorial</title>
+	
+</head>
+<body>
+	<header>This is header...
+      	<div class="mess_box">
+			<span class="mess">Media Query Introduction</span>
+		</div>
+	</header>
+
+	<section>
+
+	<h1>Responsive Web Design - Media Queries</h1>
+
+        <div class="syntax">	                     	       	
+       </div>
+
+
+
+
+
+
+<div class="page">
+	<div class="box1">Box1</div>
+
+
+	<div class="box2">Box2
+
+
+What is Lorem Ipsum?
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+	</div>
+
+
+	<div class="box3">Box3
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="notes">Notes
+    </div>
+
+
+
+
+
+    <!-- Aeroplane -->
+	<div class="aeroplane">
+	   	<img class="aeroplane" src="public/images/aeroplane03.png">	
+	</div>
+
+    <!-- Smily -->
+	<div class="smily_one_wrapper">
+	   	<img class="smily_one" src="public/images/smily01.png">	
+	</div>    
+
+	</section>
+
+
+	<!-- Bottom Text -->		
+	<div class="courses">
+		<span class="course">Web Development & Web Designing: HTML, HTML5, CSS, CSS3, Javascript, jquery, vue js, angular js, react js, express js, node js, typescript, core php, cakephp, codeigniter, laravel, zend, 
+		laminas, mysql, RDMS, mongoDB, sqlite, wordpress, python, django, flash, ruby, ruby on rails etc.</span>
+	</div>
+
+	<footer>This is footer...
+
+	    <!-- Animation Text -->
+		<div class="animationText">		   	  
+			<div class="animationstxt">HTML5 & CSS3 Tutorial</div>
+		</div>	
+	</footer>
+</body>
+</html>
+
+
+
+
+
+<style>
+	   .notes {
+		   	width:180px;
+		   	height:20px;
+		   	color:white;
+		   	font-weight:bold;
+		   	position:absolute;
+		   	left:352px;
+		   	top:0;
+		   	background:blue;
+		   	overflow: hidden;	   
+	   }
+	   
+		.notes:hover{
+		   	width:400px;
+		   	height:400px;
+		   	font-size:12px;
+		   	color:white;
+		   	padding:6px;
+		   	display:block;
+		   	overflow:scroll;
+		}
+
+
+ /*  Tutorial 05 */
+	.smily_one_wrapper{width:300px;height:100px;position:absolute;top:200px;left:120px;}
+ 	.smily_one{	
+	    width:50px;	  
+		background: transparent;
+		animation: smily01 5s linear infinite;  
+	}
+	@keyframes smily_one {	
+	   0%{width:0;transform:scale(0) rotate(0deg);}
+	   25%{width:50px;transform:scale(3) rotate(-10deg);}	
+	   50%{width:50px;transform:scale(3) rotate(0deg);}	   
+	   100%{width:90px;transform:scale(0) rotate(30deg);}
+	}
+
+
+.   .animationText {
+
+	}
+
+    .animationstxt{
+       margin-top:15px;
+    }
+
+    .mess_box{width:300px;height:30px;}
+    .mess{    	
+    	width:300px;
+    	color:white;
+    	font-size:15px;
+    }
+
+
+	.aeroplane{	
+		width:60%;
+		left:-130px;bottom:36px;		
+		animation: aeroplane 20s linear infinite;
+	}
+
+	@keyframes aeroplane {
+	   0%{left:-270px;bottom:0px;}
+	   50%{left:20px;bottom:100px;}	   
+	   75%{left:1390px;bottom:140px;width:20%;transform: rotate(-15deg);}
+	   100%{left:1390px;bottom:140px;width:20%;transform: rotate(-15deg);}
+	}
+
+
+	.courses{
+		width:100%;height:20px;					
+		background: red;	
+		position:absolute;left:0;top:524px;		      
+	}
+	.course{				
+	    color:yellow;
+		font-weight:bold;
+		font-size:15px;	
+        position:absolute;left:1400px;
+		animation: course 25s linear infinite;	
+	}
+
+	@keyframes course{
+	   0% {
+	   	    left:1400px;
+	   	  }
+
+	   100% {
+
+	   	    left:-1500px;
+	   	}	  		
+
+	}
+
+
+	</style>

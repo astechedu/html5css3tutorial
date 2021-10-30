@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="#">
+	<link rel="stylesheet" type="text/css" href="site.css">
+	<script type="text/javascript" src="Any Js Link Here"></script>
+	<title>HTML5 & CSS3 Tutorial</title>
+</head>
+<body>
+	<div class="animation_container" id="">
+		<!-- LOGO -->
+	    <div class="astech" id="astech">
+	    <img id="logo" src="public/images/astech.jpg">      
+	    </div>
+	    <!-- LOGO End -->
+		<div class="slide">	
+			<h1>HTML5 & CSS3 Tutorial For Beginners<h1>		
+		</div>
+	    <!-- TopBox -->
+		<div id="topbox" style="">
+		   <div id="box1"style="">CSS3	
+		   </div>	
+		   <div id="box2" style="">CSS3
+		   </div>
+			<div style="clear:both;"></div>
+		</div>
+		<!-- OVAL -->
+		<div class="oval">
+			<div class="pillar">
+			     <div style="width:100%;height:20px;background:brown;"></div>
+			</div>
+		</div>
+	    <!-- Tutorial -->
+	    <div class="tutorial">	  
+		     <div id="todaysTopic">Tutorial_18: Media Query</div>	   
+		</div>
+	    <!-- Like, Subscribe and Share -->	
+		<div class="youtube01">	  
+		     <div class="like">Like</div>	   
+		</div>
+		
+		<div class="youtube02">	  	   	  
+		   	  <div class="subscribe">Subscribe</div>	
+		</div>	
+
+		<div class="youtube03">		   	  
+		   	  <div class="share">Share</div>
+		</div>
+	    <!-- Web Development Text -->
+		<div class="webDevelopmentText">		   	  
+		   	  <div class="web">Web Development And Web Designing</div>
+		</div>
+	    <!-- Animation Text -->
+		<div class="animationText">		   	  
+		   	  <div class="animationstxt">Your are watching media query</div>
+		</div>		
+
+       <!-- Smily -->
+	   <div class="">
+	   	  <img class="smily01" src="public/images/smily01.png">	
+	   </div>
+
+	   <div class="">
+	   	  <img class="smily02" src="public/images/smily04.png">	
+	   </div>
+
+    </div>
+
+   <img class="aeroplane" src="public/images/aeroplane03.png">	
+
+
+</body>
+</html>
+
+<style type="text/css">
+	*{margin:0;padding:0;background:orange;}
+	.animation_container{
+		width:90%;
+		height:625px;
+		position:relative;
+		background: transparent;
+		margin:0 auto;	  
+		overflow: hidden;  
+	}
+/* Css for Logo */
+    .astech{width:70px;
+        padding:8px;
+        margin:10px;
+        border:2px solid pink;
+        border-radius:50%;
+        background:transparent;
+        position:absolute;
+        animation:astech 10s linear infinite;
+    }
+    .astech #logo{
+          width:70px;          
+          animation:logo 1s linear alternate infinite;        
+    }
+
+  @keyframes astech{ 
+      0%{transform:rotateY(0deg);}
+      100%{transform:rotateY(360deg);}    
+  }
+  @keyframes logo{ 
+      0%{transform:rotate(-10deg);}
+      100%{transform:rotate(10deg);}        
+  } 
+
+/* Top Two Boxes */	
+   #topbox{
+		width:40%;
+		margin-left:350px;
+		position:absolute;
+		background:transparent;   	
+   }
+
+   #box1{
+		width:10%;
+		height:30px;
+		background:pink;
+		float:left;
+		padding:10px;
+		color:green;
+		font-size:20px;
+	    border-radius:10px;
+	    animation:box1 10s linear infinite;
+   }
+
+   #box2{
+		width:10%;
+		height:30px;
+		background:lightblue;
+		float:right;
+		padding:30px;
+		color:blue;
+		font-size:30px;
+		animation:box2 9s linear infinite;
+   }
+    .oval{
+		width:30%;
+		height:100px;
+		margin:400px 700px;
+		background:blue;
+        border-radius:50%;
+        position:relative;
+        box-shadow: 0 0 3px black;
+        animation:oval 40s linear infinite;    	
+    }
+    .pillar{
+		width:30px;
+		height:250px;
+		background:pink;
+		position:absolute;
+		left:170px;top:-200px;
+		border-radius:100px;
+		box-shadow: 0 0 3px black;
+		animation:pillar 1s linear infinite;    	
+    }
+	@keyframes pillar{
+		0% {transform:rotateY(0deg);background:pink;}
+		100% {transform:rotateY(360deg);background:blue;}
+		0% {transform:rotateY(0deg);background:yellow;}
+	}
+
+	@keyframes oval{
+		0% {transform:skew(0deg,0deg);}
+		50% {transform:skew(0deg,0deg);}
+		100% {transform:skew(0deg,0deg);}
+	}
+
+/* Css for Logo End */	
+
+    .slide {
+    	width:50%;
+    	color:white;
+    	margin:10px auto;padding:4px;
+    }
+
+	.slide h1{
+		position:relative;top:10px;
+		background:transparent;		
+		animation:slide 4s alternate infinite;
+	}
+
+	@keyframes slide{
+		0% {left:0px;transform:rotate(-3deg);}
+		25% {left:300px;transform:rotate(0deg);}
+		50% {left:300px;transform:rotate(-4deg);}
+		75% {left:300px;transform:rotate(0deg);}
+		100% {left:0px;transform:rotate(3deg);}
+	}
+
+
+	@keyframes box1{
+		0% {padding:10px;}
+		50% {padding:20px;}
+		100% {padding:10px;}
+	}
+
+	@keyframes box2{
+		0% {transform:rotateY(0deg);}
+		100% {transform:rotateY(360deg);}
+		0% {transform:rotateY(0deg);}
+	}
+
+  .youtube01 {width:300px;position:absolute;left:0px;top:250px;}  
+  .youtube02 {width:300px;position:absolute;left:0px;top:310px;}  
+  .youtube03 {width:300px;position:absolute;left:0px;top:370px;}  
+
+  .social,.like,.subscribe,.share{
+  	   width:300px;
+  	   text-align:center;
+  	   background: white;
+  	   color:red;
+  	   font-size:45px;
+	   position:absolute;	   
+	   border-radius: 0 0 35px 0;  
+	}
+   .social, .like{animation:like 2s linear infinite;}
+	@keyframes like{0%{left:-320px;} 50%{left:0px;} 100%{left:-320px;}}
+
+	.social, .subscribe{animation:subscribe 4s linear infinite;}
+	@keyframes subscribe{0%{left:-350px;} 50%{left:0px;} 100%{left:-350px;}}
+
+	.social, .share{animation:share 5s linear infinite;}
+	@keyframes share{0%{left:-400px;} 50%{left:0px;} 100%{left:-400px;}}
+
+
+  .webDevelopmentText{width:400px;}
+  .webDevelopmentText,.web{
+  	   width:840px;
+  	   text-align:center;
+  	   background: blue;
+  	   color:yellow;
+  	   font-size:50px;
+	   position:absolute;left:0;bottom:0;	   
+	   border-radius: 0 0 35px 0; 
+	   animation:web 4s linear infinite; 
+	}   
+	@keyframes web{0%{left:-410px;} 50%{left:0px;} 100%{left:-410px;}}
+
+
+  .tutorial{width:600px;position:absolute;left:350px;top:200px;}
+  .tutorial,#todaysTopic{
+  	   width:600px;text-align:center;background: green;
+  	   color:yellow;font-size:25px;	  	   
+	   animation:todaysTopic 2s linear infinite;
+	}   
+	
+   @keyframes todaysTopic{
+	   0%{left:300px;color:yellow;border:2px solid red;} 
+	   50%{left:350px;color:white;border:2px solid yellow;} 
+	   100%{left:300px;color:orange;border:2px solid red;}
+   }
+
+  
+  .animationText{
+  	   width:100px;
+  	   height:100px;
+  	   text-align:center;
+  	   background: red;  
+  	   padding:10px;
+	   position:absolute;left:400px;bottom:200px;	   
+	   border-radius: 55px;	   
+	   transform:scale(0);
+	   animation:animationsTxt 7s 5s linear alternate;	   
+	}  
+     .animationstxt{border-radius: 55px;background: transparent;color:white;font-size:20px;}
+	@keyframes animationsTxt{
+	   0%{left:410px;transform:scale(0);} 
+	   50%{left:410px;transform:scale(1.2);} 
+	   100%{left:410px;transform:scale(0);}
+	}
+
+ /* Aeroplane */
+	.aeroplane{
+		width: 100px;		
+		position: absolute;
+		left:-15px;bottom:36px;
+		background: transparent;
+		animation: airo 10s linear forwards;
+	}
+
+	@keyframes airo {	
+
+	   0%{left:-500px;bottom: 30px;transform: rotate(10deg);}
+	   25%{left:300px;bottom:50px;transform: rotate(-10deg);}	   
+	   50%{left:1240px;bottom:530px;transform: rotate(-5deg);}
+	   75%{left:1240px;bottom:530px;transform: rotate(90deg);}
+	   100%{left:880px;bottom: 100px;transform: rotate(180deg);}
+	}
+
+</style>

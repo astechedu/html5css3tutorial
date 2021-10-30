@@ -1,0 +1,28 @@
+*{margin:0;padding:0;}
+header{color:white;background:red;font-size:40px;}
+footer{width:100%;color:white;background:black;font-size:80px;position:fixed;left:0;bottom:0;}
+section{margin-left:20px;}
+
+#main {
+	width: 200px;
+	height: 100px;		  
+	margin:10px;
+	background-color: lightblue;
+}
+
+
+
+
+
+
+/* Comments
+margin-left:20px;  
+
+margin-right:20px; 
+
+margin-top:20px;  
+
+margin-botton:20px; 
+
+margin-left:20px 20px 20px 20px;  
+*/

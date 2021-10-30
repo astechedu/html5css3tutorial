@@ -1,0 +1,15 @@
+*{margin:0;padding:0;}
+header{width:100%;color:white;background:red;font-size:40px;}
+footer{width:100%;color:white;background:black;font-size:80px;position: fixed;left:0;bottom:0;}
+section{}
+
+#main {
+	width: 200px;
+	height: 100px;		  
+	padding: 10px;
+	margin: 20px;
+	border: 5px solid green;
+	background-color: lightblue;
+}
+
+	
